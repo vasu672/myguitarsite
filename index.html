@@ -8,52 +8,73 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://www.transparenttextures.com/patterns/guitar-wall.png');
-      background-color: #f5f7fa;
-      color: #222;
+      background: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1650&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.65); /* Dark overlay for readability */
+      z-index: -1;
     }
 
     header {
-      background-color: #282c34;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
       padding: 2rem;
       text-align: center;
-      color: white;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     header h1 {
+      font-size: 2.5rem;
       margin: 0;
-      font-size: 2.8rem;
-      letter-spacing: 1px;
+    }
+
+    .banner {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #1a73e8;
+      color: white;
+      font-size: 1.4rem;
+      font-weight: bold;
     }
 
     main {
       max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
+      margin: auto;
+      padding: 2rem 1.5rem;
     }
 
     section {
-      background: rgba(255, 255, 255, 0.95);
-      padding: 1.8rem;
-      margin-bottom: 2rem;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 1.5rem;
+      margin-bottom: 1.8rem;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      backdrop-filter: blur(5px);
     }
 
     h2 {
-      color: #1a73e8;
-      margin-bottom: 0.8rem;
+      color: #4ecdc4;
+      margin-bottom: 0.5rem;
     }
 
     p {
       line-height: 1.6;
       font-size: 1.1rem;
+      color: #f0f0f0;
     }
 
     .book-now {
       text-align: center;
-      margin-top: 2rem;
+      margin: 2rem 0;
     }
 
     .book-now a {
@@ -66,7 +87,6 @@
       border-radius: 6px;
       transition: background 0.3s ease;
       display: inline-block;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     }
 
     .book-now a:hover {
@@ -74,21 +94,42 @@
     }
 
     .contact-info a {
-      color: #1a73e8;
+      color: #90cdf4;
       text-decoration: none;
     }
 
-    footer {
-      background-color: #333;
+    .testimonial {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-left: 4px solid #1a73e8;
+      padding: 1rem;
+      margin-top: 1rem;
+      font-style: italic;
+      color: #ddd;
+    }
+
+    .schedule ul {
+      padding-left: 1.2rem;
       color: #eee;
+    }
+
+    footer {
       text-align: center;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #ccc;
       padding: 1rem;
       font-size: 0.9rem;
     }
 
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #90cdf4;
+    }
+
     @media (max-width: 600px) {
       header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
 
       .book-now a {
@@ -104,38 +145,76 @@
     <h1>Vasu Guitar Classes</h1>
   </header>
 
+  <div class="banner">
+    🎸 Learn Guitar the Fun Way – Book Your First Lesson Free!
+  </div>
+
   <main>
     <section>
-      <h2>About</h2>
+      <h2>About Me</h2>
       <p>
-        Welcome to <strong>Vasu Guitar Classes</strong>! I'm Vasu, a passionate guitarist offering beginner-friendly lessons to help you master your skills. Whether you're starting from scratch or looking to refine your playing, you're in the right place!
+        Hi, I'm <strong>Vasu</strong> — a passionate guitarist and tutor. I specialize in teaching beginners with easy, practical techniques. My goal is to make you love the guitar as much as I do.
       </p>
     </section>
 
     <section>
-      <h2>Lessons</h2>
+      <h2>Why Choose Me?</h2>
+      <p>✅ Friendly & easy teaching style</p>
+      <p>✅ Learn your favorite songs quickly</p>
+      <p>✅ Classes in Hindi or English</p>
+      <p>✅ Free trial session for first-timers</p>
+    </section>
+
+    <section>
+      <h2>Lessons Offered</h2>
       <p>
-        🎸 Learn acoustic or electric guitar <br />
-        🕒 Flexible class timing <br />
-        🎶 Master chords, fingerstyle, rhythm & soloing <br />
-        💡 Personalized tips and song breakdowns
+        🎼 Acoustic & Electric Guitar <br />
+        🧠 Music theory basics <br />
+        🎵 Chords, strumming, solos <br />
+        📀 Bollywood & Western songs
       </p>
     </section>
 
-    <section class="book-now">
-      <a href="https://wa.me/919211323137" target="_blank">📆 Book a Lesson</a>
+    <div class="book-now">
+      <a href="https://wa.me/919211323137" target="_blank">📆 Book a Free Trial</a>
+    </div>
+
+    <section class="testimonial">
+      “Vasu sir is amazing! I learned my first full song in just 2 classes. Highly recommended!”  
+      <br>– Rohan, Age 16
+    </section>
+
+    <section class="testimonial">
+      “Very helpful and patient teacher. Now I can play chords without looking!”  
+      <br>– Priya, Beginner Student
+    </section>
+
+    <section class="schedule">
+      <h2>Class Timings</h2>
+      <ul>
+        <li>Mon – Fri: 5 PM – 9 PM</li>
+        <li>Saturday: 11 AM – 3 PM</li>
+        <li>Sunday: On request</li>
+      </ul>
     </section>
 
     <section class="contact-info">
-      <h2>Contact</h2>
+      <h2>Contact Me</h2>
       <p><strong>Name:</strong> Vasu</p>
       <p><strong>Phone:</strong> <a href="tel:9211323137">9211323137</a></p>
       <p><strong>Email:</strong> <a href="mailto:karun94046@gmail.com">karun94046@gmail.com</a></p>
     </section>
+
+    <section class="social-icons" style="text-align: center;">
+      <h2>Follow Me</h2>
+      <a href="https://wa.me/919211323137" title="WhatsApp">🟢</a>
+      <a href="https://www.instagram.com" title="Instagram">📸</a>
+      <a href="https://www.youtube.com" title="YouTube">▶️</a>
+    </section>
   </main>
 
   <footer>
-    &copy; 2025 Vasu Guitar Classes. Designed for music lovers.
+    &copy; 2025 Vasu Guitar Classes | Designed with 🎶 and ❤️
   </footer>
 
 </body>
