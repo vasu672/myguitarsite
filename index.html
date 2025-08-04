@@ -59,25 +59,7 @@
       border-radius: 10px;
       box-shadow: 0 0 15px #4db8ff55;
       margin-bottom: 2rem;
-      animation: fadeInUp 0.8s ease forwards;
-      opacity: 0;
     }
-    section:nth-child(2) { animation-delay: 0.2s; }
-    section:nth-child(3) { animation-delay: 0.4s; }
-    section:nth-child(4) { animation-delay: 0.6s; }
-    section:nth-child(5) { animation-delay: 0.8s; }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-    }
-
     h2 {
       margin-bottom: 1rem;
       font-size: 2rem;
@@ -98,26 +80,27 @@
     .contact-info strong, .lessons strong {
       color: #79c6ff;
     }
-    /* YouTube video embed */
-    .video-wrapper {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      margin: 1rem auto;
-      border-radius: 10px;
-      box-shadow: 0 0 15px #4db8ff88;
+
+    .book-now-container {
+      text-align: center;
+      margin: 2rem 0;
     }
-    .video-wrapper iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-radius: 10px;
+    .book-now-btn {
+      display: inline-block;
+      background: #4db8ff;
+      color: #121212;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 0 12px #4db8ff88;
     }
-    /* Gallery */
+    .book-now-btn:hover {
+      background: #79c6ff;
+      transform: scale(1.05);
+    }
+
     .gallery {
       display: flex;
       gap: 15px;
@@ -137,7 +120,6 @@
     .gallery img:hover {
       transform: scale(1.1);
     }
-    /* Quote */
     blockquote {
       font-style: italic;
       color: #9bb7d4;
@@ -146,7 +128,6 @@
       border-left: 4px solid #4db8ff;
       padding-left: 1rem;
     }
-    /* Footer */
     footer {
       background: #11111a;
       padding: 1rem 0;
@@ -159,7 +140,6 @@
       margin: 0 10px;
       font-size: 1.4rem;
     }
-    /* Responsive */
     @media (max-width: 600px) {
       header h1 {
         font-size: 2.2rem;
@@ -201,20 +181,19 @@
         I love teaching guitar! Here are some tips to get started or improve your skills:<br />
         <strong>Practice daily</strong>, focus on chord changes, and try playing along with your favorite songs. Keep your fingers relaxed and explore different styles like blues, rock, or classical.
       </p>
-      <div class="video-wrapper" aria-label="Guitar tutorial video">
-        <!-- Example YouTube embed (replace with your favorite video URL if you want) -->
-        <iframe src="https://www.youtube.com/embed/2qJ6xPb9KjA" title="Guitar Tutorial for Beginners" allowfullscreen></iframe>
-      </div>
     </section>
+
+    <div class="book-now-container">
+      <a href="https://wa.me/919211323137" target="_blank" class="book-now-btn">📆 Book a Lesson Now</a>
+    </div>
 
     <section class="gallery-section" aria-labelledby="gallery-heading">
       <h2 id="gallery-heading">Guitar Gallery</h2>
-      <div class="gallery" role="list">
-        <!-- You can replace these URLs with your own guitar photos -->
-        <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=400&q=80" alt="Acoustic guitar" role="listitem" />
-        <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80" alt="Electric guitar" role="listitem" />
-        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=400&q=80" alt="Guitar strings close-up" role="listitem" />
-        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=400&q=80" alt="Playing guitar" role="listitem" />
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=400&q=80" alt="Acoustic guitar" />
+        <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80" alt="Electric guitar" />
+        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=400&q=80" alt="Guitar strings close-up" />
+        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=400&q=80" alt="Playing guitar" />
       </div>
     </section>
 
@@ -234,6 +213,11 @@
 
   <footer>
     <p>Made with ❤️ by Vasu &nbsp;|&nbsp; Follow me on: 
-      <a href="#" title="Twitter" aria-label="Twitter">🐦</a>
-      <a href="#" title="Instagram" aria-label="Instagram">📸</a>
-      <a href="#" title="YouTube" aria-label="YouTube">▶️</
+      <a href="#" title="Twitter">🐦</a>
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="YouTube">▶️</a>
+    </p>
+  </footer>
+
+</body>
+</html>
