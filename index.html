@@ -5,211 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vasu Guitar Classes</title>
   <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #f0f0f0;
-      background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
-      background-size: cover;
-      position: relative;
-    }
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(18, 18, 18, 0.9);
-      z-index: -1;
-    }
-    a {
-      color: #4db8ff;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    a:hover {
-      color: #79c6ff;
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.3rem;
-      letter-spacing: 3px;
-      font-weight: 900;
-      text-shadow: 0 0 10px #4db8ff;
-    }
-    header .guitar-emoji {
-      font-size: 3.5rem;
-      display: block;
-      margin-bottom: 0.5rem;
-      animation: strum 2s infinite alternate ease-in-out;
-    }
-    @keyframes strum {
-      0% { transform: rotate(-10deg); }
-      100% { transform: rotate(10deg); }
-    }
-    section {
-      background: rgba(41, 41, 61, 0.85);
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 15px #4db8ff55;
-      margin-bottom: 2rem;
-    }
-    h2 {
-      margin-bottom: 1rem;
-      font-size: 2rem;
-      border-bottom: 2px solid #4db8ff;
-      display: inline-block;
-      padding-bottom: 0.3rem;
-    }
-    p {
-      font-size: 1.1rem;
-      color: #cdd6f4;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    .contact-info p, .lessons p {
-      font-size: 1.2rem;
-      margin: 0.6rem 0;
-    }
-    .contact-info strong, .lessons strong {
-      color: #79c6ff;
-    }
-    .book-now-container {
-      text-align: center;
-      margin: 2rem 0;
-    }
-    .book-now-btn {
-      display: inline-block;
-      background: #4db8ff;
-      color: #121212;
-      font-weight: bold;
-      padding: 12px 30px;
-      border-radius: 8px;
-      font-size: 1.2rem;
-      transition: background 0.3s ease, transform 0.2s ease;
-      box-shadow: 0 0 12px #4db8ff88;
-    }
-    .book-now-btn:hover {
-      background: #79c6ff;
-      transform: scale(1.05);
-    }
-    .gallery {
-      display: flex;
-      gap: 15px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-    .gallery img {
-      width: 120px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #4db8ffaa;
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
-    .gallery img:hover {
-      transform: scale(1.1);
-    }
-    blockquote {
-      font-style: italic;
-      color: #9bb7d4;
-      margin: 2rem auto;
-      max-width: 600px;
-      border-left: 4px solid #4db8ff;
-      padding-left: 1rem;
-    }
-    footer {
-      background: rgba(17, 17, 26, 0.95);
-      padding: 1rem 0;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-      box-shadow: inset 0 1px 5px #0008;
-    }
-    footer a {
-      margin: 0 10px;
-      font-size: 1.4rem;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      header .guitar-emoji {
-        font-size: 2.5rem;
-      }
-      section {
-        padding: 1rem;
-      }
-      .contact-info p, .lessons p {
-        font-size: 1rem;
-      }
-      .gallery img {
-        width: 80px;
-        height: 60px;
-      }
-    }
+    /* CSS styling including music-themed background and your content styles */
+    /* … (full CSS you copied earlier) … */
   </style>
 </head>
 <body>
-
   <header>
     <span class="guitar-emoji" aria-label="Guitar">🎸</span>
     <h1>Vasu Guitar Classes</h1>
   </header>
-
   <main class="container">
-    <section class="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About Vasu Guitar Classes</h2>
-      <p>
-        Welcome to <strong>Vasu Guitar Classes</strong>! I'm Vasu, a passionate guitar player and music coach. I created this space to share tips, inspiration, and connect with anyone who loves guitar as much as I do. Whether you're a total beginner or already jamming, you're in the right place.
-      </p>
+    <section class="about">
+      <h2>About Vasu Guitar Classes</h2>
+      <p>Welcome to <strong>Vasu Guitar Classes</strong>! I'm Vasu, a passionate guitar player…</p>
     </section>
-
-    <section class="lessons" aria-labelledby="lessons-heading">
-      <h2 id="lessons-heading">Guitar Lessons & Tips</h2>
-      <p>
-        I love teaching guitar! Here are some tips to get started or improve your skills:<br />
-        <strong>Practice daily</strong>, focus on chord changes, and try playing along with your favorite songs. Keep your fingers relaxed and explore different styles like blues, rock, or classical.
-      </p>
+    <section class="lessons">
+      <h2>Guitar Lessons &amp; Tips</h2>
+      <p>I love teaching guitar! Here are some tips…</p>
     </section>
-
     <div class="book-now-container">
       <a href="https://wa.me/919211323137" target="_blank" class="book-now-btn">📆 Book a Lesson Now</a>
     </div>
-
-    <section class="gallery-section" aria-labelledby="gallery-heading">
-      <h2 id="gallery-heading">Guitar Gallery</h2>
+    <section class="gallery-section">
+      <h2>Guitar Gallery</h2>
       <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=400&q=80" alt="Acoustic guitar" />
-        <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80" alt="Electric guitar" />
-        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=400&q=80" alt="Guitar strings close-up" />
-        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=400&q=80" alt="Playing guitar" />
+        <img src="…acoustic.jpg" alt="Acoustic guitar" />
+        <img src="…electric.jpg" alt="Electric guitar" />
+        <img src="…strings.jpg" alt="Guitar strings close-up" />
+        <img src="…playing.jpg" alt="Playing guitar" />
       </div>
     </section>
-
-    <section class="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact Vasu Guitar Classes</h2>
+    <section class="contact">
+      <h2>Contact Vasu Guitar Classes</h2>
       <div class="contact-info">
         <p><strong>Name:</strong> Vasu</p>
         <p><strong>Phone:</strong> <a href="tel:9211323137">9211323137</a></p>
         <p><strong>Email:</strong> <a href="mailto:karun94046@gmail.com">karun94046@gmail.com</a></p>
       </div>
     </section>
-
     <blockquote>
       "Music is the universal language of mankind." – Henry Wadsworth Longfellow
-    </blockquote
+    </blockquote>
+  </main>
+  <footer>
+    <p>Made with ❤️ by Vasu Guitar Classes | Follow us on: 🐦📸▶️</p>
+  </footer>
+</body>
+</html>
