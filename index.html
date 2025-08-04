@@ -6,42 +6,49 @@
   <title>Vasu Guitar Classes</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
       margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    h2 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/guitar-wall.png');
+      background-color: #f5f7fa;
       color: #222;
     }
 
-    .contact-info {
-      background-color: #eee;
-      padding: 1rem;
-      border-radius: 5px;
+    header {
+      background-color: #282c34;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1.8rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #1a73e8;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
     }
 
     .book-now {
@@ -50,23 +57,44 @@
     }
 
     .book-now a {
-      background-color: #28a745;
-      color: #fff;
-      padding: 10px 20px;
+      background-color: #1a73e8;
+      color: white;
+      padding: 12px 28px;
       text-decoration: none;
-      border-radius: 5px;
+      font-size: 1.2rem;
       font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+      display: inline-block;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     }
 
     .book-now a:hover {
-      background-color: #218838;
+      background-color: #155ab6;
+    }
+
+    .contact-info a {
+      color: #1a73e8;
+      text-decoration: none;
     }
 
     footer {
+      background-color: #333;
+      color: #eee;
       text-align: center;
       padding: 1rem;
-      background-color: #ddd;
       font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .book-now a {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
@@ -79,16 +107,23 @@
   <main>
     <section>
       <h2>About</h2>
-      <p>Welcome to Vasu Guitar Classes! I'm Vasu, a passionate guitarist offering beginner-friendly lessons to help you master your skills.</p>
+      <p>
+        Welcome to <strong>Vasu Guitar Classes</strong>! I'm Vasu, a passionate guitarist offering beginner-friendly lessons to help you master your skills. Whether you're starting from scratch or looking to refine your playing, you're in the right place!
+      </p>
     </section>
 
     <section>
       <h2>Lessons</h2>
-      <p>We offer acoustic and electric guitar lessons for all levels. Learn chords, rhythm, fingerstyle, and music theory — all in an easy and fun way.</p>
+      <p>
+        🎸 Learn acoustic or electric guitar <br />
+        🕒 Flexible class timing <br />
+        🎶 Master chords, fingerstyle, rhythm & soloing <br />
+        💡 Personalized tips and song breakdowns
+      </p>
     </section>
 
     <section class="book-now">
-      <a href="https://wa.me/919211323137" target="_blank">📅 Book a Lesson</a>
+      <a href="https://wa.me/919211323137" target="_blank">📆 Book a Lesson</a>
     </section>
 
     <section class="contact-info">
@@ -100,7 +135,7 @@
   </main>
 
   <footer>
-    &copy; 2025 Vasu Guitar Classes. All rights reserved.
+    &copy; 2025 Vasu Guitar Classes. Designed for music lovers.
   </footer>
 
 </body>
